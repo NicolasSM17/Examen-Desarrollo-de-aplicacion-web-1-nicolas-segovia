@@ -7,11 +7,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "cliente")
+@Table(name = "categoria")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class Categoria {
-	private int id;
+	private Integer id;
 	private String nombre;
 }
