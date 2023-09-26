@@ -32,7 +32,7 @@ public class Cliente {
 	@Email
 	private String correo;
 	
-	private Date fechaNacimiento;
+	private String fechaNacimiento;
 	
 	@Size(min = 8, max = 8)
 	private String dni;
