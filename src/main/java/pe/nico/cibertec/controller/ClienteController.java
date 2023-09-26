@@ -43,6 +43,6 @@ public class ClienteController {
 	public String salvar(@Validated Cliente cliente) {
 		clienteService.grabar(cliente);
 		
-		return "redirect:/listar";
+		return "redirect:/cliente/listar";
 	}
 }
