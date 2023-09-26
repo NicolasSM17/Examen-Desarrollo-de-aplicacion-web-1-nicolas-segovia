@@ -8,7 +8,31 @@
 	<title>Listado</title>
 </head>
 <body>
-
-
+	<div class="container mt-4">
+		<h1>LISTADO DE CLIENTES</h1>
+		<a th:href="@{/nuevo}" class="btn btn-primary">Registrar Cliente</a>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NOMBRES</th>
+					<th>APELLIDOS</th>
+					<th>CORREO</th>
+					<th>FECHA DE NACIMIENTO</th>
+					<th>DNI</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="l: ${listado}">
+					<td th:text="${l.id}"></td>
+					<td th:text="${l.nombre}"></td>
+					<td th:text="${l.apellido}"></td>
+					<td th:text="${l.correo}"></td>
+					<td th:text="${l.fechaNacimiento}"></td>
+					<td th:text="${l.dni}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
 </html>
