@@ -32,7 +32,6 @@ public class Cliente {
 	@Email
 	private String correo;
 	
-	@Temporal(TemporalType.TIMESTAMP)
 	private Date fechaNacimiento;
 	
 	@Size(min = 8, max = 8)
